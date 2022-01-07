@@ -1,11 +1,7 @@
----
 name: Beta - Bug report
 description: Create a report to help us improve
 title: "[BUG]: "
 labels: ["type/bug", "needs-triage"]
-assignees: ''
-
----
 body:
   - type: markdown
     attributes:
