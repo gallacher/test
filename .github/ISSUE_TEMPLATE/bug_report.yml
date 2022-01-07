@@ -84,23 +84,3 @@ body:
       placeholder: "RHEL 7.6"
     validations:
       required: true
-  - type: checkboxes
-    id: authorization
-    attributes:
-      options:
-      - label: Authorization
-  - type: input
-    id: auth_version
-    attributes:
-      label: Version
-      placeholder: "v1.1.0"
-  - type: checkboxes
-    id: resiliency
-    attributes:
-      options:
-      - label: Resiliency (podmon)
-  - type: input
-    id: resiliency_version
-    attributes:
-      label: Version
-      placeholder: "v1.1.0"
