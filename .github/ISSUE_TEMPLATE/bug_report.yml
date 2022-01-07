@@ -19,7 +19,6 @@ body:
     attributes:
       label: Logs
       description: Upload logs to this bug report or provide relevant log output here. Please be sure to remove all sensitive data such as IP addresses, host names, credentials, etc.
-      render: shell
     validations:
       required: false
   - type: textarea
@@ -27,7 +26,6 @@ body:
     attributes:
       label: Additional Environment Information
       description: Provide additional environment information such as a listing of pods, PVs, PVCs, VolumeAttachments, Events, etc.
-      render: shell
     validations:
       required: false  
   - type: textarea
