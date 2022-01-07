@@ -20,7 +20,7 @@ body:
       label: Logs
       description: Upload logs to this bug report or provide relevant log output here. Please be sure to remove all sensitive data such as IP addresses, host names, credentials, etc.
     validations:
-      required: true
+      required: false
   - type: textarea
     id: info
     attributes:
