@@ -69,8 +69,8 @@ body:
       description: What installation type was used? Operator or Helm? Please provide the version as well.
       placeholder: Operator v1.6.1
     validations:
-      required: false   
-- type: textarea
+      required: false    
+  - type: textarea
     id: module
     attributes:
       label: Container Storage Modules Enabled
