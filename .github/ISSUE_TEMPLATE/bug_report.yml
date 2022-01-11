@@ -15,12 +15,19 @@ body:
     validations:
       required: true
   - type: textarea
-    id: logs
+    id: files
     attributes:
       label: Logs
-      description: Upload logs to this bug report or provide relevant log output here. Please be sure to remove all sensitive data such as IP addresses, host names, credentials, etc.
+      description: Copy/paste any relevant log output here or Upload log files by dragging and dropping the files into the text area. Please be sure to remove all sensitive data such as IP addresses, host names, credentials, etc.
     validations:
       required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: Upload any relevant screenshots here by dragging and dropping the files into the text area.
+    validations:
+      required: false      
   - type: textarea
     id: info
     attributes:
@@ -45,7 +52,7 @@ body:
   - type: textarea
     id: driver
     attributes:
-      label: CSI Driver(s)
+      label: CSM Driver(s)
       description: Please list the CSI drivers and versions that are applicable to this bug.
       placeholder: |
         CSI Driver for PowerFlex v2.1
@@ -55,7 +62,15 @@ body:
         CSI Driver for Unity XT v2.1
     validations:
       required: true
-  - type: textarea
+  - type: input
+    id: install
+    attributes:
+      label: Installation Type
+      description: "What installation type was used? Operator or Helm? Please provide the version as well."
+      placeholder: "Operator v1.6.1"
+    validations:
+      required: false   
+- type: textarea
     id: module
     attributes:
       label: Container Storage Modules Enabled
@@ -73,7 +88,7 @@ body:
     attributes:
       label: Container Orchestrator
       description: Which container orchestrator is being used? Please provide the version as well.
-      placeholder: Kubernetes 1.2.3
+      placeholder: Kubernetes 1.23.1
     validations:
       required: true  
   - type: input
