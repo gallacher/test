@@ -66,8 +66,8 @@ body:
     id: install
     attributes:
       label: Installation Type
-      description: "What installation type was used? Operator or Helm? Please provide the version as well."
-      placeholder: "Operator v1.6.1"
+      description: What installation type was used? Operator or Helm? Please provide the version as well.
+      placeholder: Operator v1.6.1
     validations:
       required: false   
 - type: textarea
@@ -95,7 +95,7 @@ body:
     id: os
     attributes:
       label: Operating System
-      description: "Which operating system is being used? Please provide the version as well."
-      placeholder: "RHEL 7.6"
+      description: Which operating system is being used? Please provide the version as well.
+      placeholder: RHEL 7.6"
     validations:
       required: true
